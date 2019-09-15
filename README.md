@@ -1,2 +1,3 @@
 # DQuizV2
-A web based Quiz app which can retrieve questions and answers from MongoDB and display it on the web.
+
+This is an enhanced version of DQuizV1 where the questions and answers are retrieved from MongoDB and displays it on the web.
