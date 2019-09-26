@@ -12,11 +12,7 @@ let Questions = " ";
 
 //   } else if (document.title == "Computer Science") {
 //     Questions = "CS.json";
-//     initialize();
-//   } else {
-//     Questions = "Politics.json";
-//     initialize();
-//   }
+
 // };
 
 // intitialize the json file and start the game
