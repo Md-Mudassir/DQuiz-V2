@@ -10,7 +10,7 @@ let questionCounter = 0;
 let availableQuesions = [];
 let Questions = " ";
 
-// intitialize and start the game
+
 initialize = () => {
   fetch("http://localhost:3112/posts")
     .then(res => {
