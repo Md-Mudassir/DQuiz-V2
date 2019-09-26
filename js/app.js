@@ -10,12 +10,7 @@ let questionCounter = 0;
 let availableQuesions = [];
 let Questions = " ";
 
-//   } else if (document.title == "Computer Science") {
-//     Questions = "CS.json";
-
-// };
-
-// intitialize the json file and start the game
+// intitialize and start the game
 initialize = () => {
   fetch("http://localhost:3112/posts")
     .then(res => {
