@@ -10,11 +10,6 @@ let questionCounter = 0;
 let availableQuesions = [];
 let Questions = " ";
 
-// check the category & assign the json file accordingly
-// window.onload = function() {
-//   if (document.title == "General Knowledge") {
-//     Questions = "GK.json";
-//     initialize();
 //   } else if (document.title == "Computer Science") {
 //     Questions = "CS.json";
 //     initialize();
