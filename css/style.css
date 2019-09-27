@@ -169,6 +169,7 @@ h3 {
 }
 
 #progressBarFull {
+  visibility: hidden;
   height: 3.8rem;
   width: 0%;
   background: #b0b7b6;
