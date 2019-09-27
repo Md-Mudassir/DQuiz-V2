@@ -16,15 +16,15 @@ const PostSchema = mongoose.Schema({
 });
 
 module.exports = mongoose.model("Posts", PostSchema);
-// question: {
-//   type: String,
-//   required: true
-// },
-// correct_answer: {
-//   type: String,
-//   required: true
-// },
-// incorrect_answers: {
-//   type: Array,
-//   required: true
-// }
+question: {
+  type: String,
+  required: true
+},
+correct_answer: {
+  type: String,
+  required: true
+},
+incorrect_answers: {
+  type: Array,
+  required: true
+}
