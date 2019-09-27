@@ -12,10 +12,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-// router.post("/", (req, res) => {
-//   console.log(req.body);
-// });
-
 //submits the post
 router.post("/", async (req, res) => {
   const post = new Post({
@@ -30,10 +26,6 @@ router.post("/", async (req, res) => {
     res.json({ message: err });
   }
 });
-
-// question: req.body.question,
-// correct_answer: req.body.correct_answer,
-// incorrect_answers: req.body.incorrect_answers
 
 //find sepcific post
 router.get("/:postId", async (req, res) => {
@@ -60,7 +52,7 @@ router.patch("/:postId", async (req, res) => {
   try {
     const updatedPost = await Post.updateOne(
       { _id: req.params.postId },
-      { $set: { title: req.body.title } }
+      { $set: { question: req.body.question } }
     );
     res.json(updatedPost);
   } catch (err) {
