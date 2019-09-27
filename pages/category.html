@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Category</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -14,12 +15,20 @@
     <div class="container">
         <div id="highScores" class="flex-center flex-column">
             <h1>Category?</h1>
-            <a id="gk" value="gk" class="btn" href="./CS.html">Computer Science</a>
-            <a id="cs" class="btn" href="./GK.html">General Knowledge</a>
-            <a id="pol" class="btn" href="./Politics.html">Politics</a>
+            <a id="cs" value="gk" class="btn" href="./CS.html">Computer Science</a>
+            <a id="gk" class="btn" href="#">General Knowledge</a>
+            <a id="pol" class="btn" href="#">Politics</a>
         </div>
     </div>
-    <script src="../js/category.js"></script>
+    <!-- <script src="../js/category.js"></script> -->
+    <script>
+        $('#gk').on('click', function () {
+            alert("Coming Soon")
+        })
+        $('#pol').on('click', function () {
+            alert("Coming Soon")
+        })
+    </script>
 </body>
 
 </html>
