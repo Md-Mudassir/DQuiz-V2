@@ -71,7 +71,7 @@ h1 {
 .btn {
   font-size: 1.8rem;
   padding: 1rem 0;
-  width: 20rem;
+  width: 25rem;
   text-align: center;
   margin-bottom: 1rem;
   text-decoration: none;
@@ -121,7 +121,7 @@ h3 {
 
 .choice-prefix {
   padding: 1.3rem 2.6rem;
-  background-color: black;
+  background-color: #585656;
   border-radius: 47% 0% 0% 46%;
   color: white;
   font-family: Poppins;
@@ -135,11 +135,11 @@ h3 {
 }
 
 .correct {
-  background-color: #28a745;
+  background-color: #4efa76;
 }
 
 .incorrect {
-  background-color: #dc3545;
+  background-color: #f07582;
 }
 
 .hud {
@@ -148,34 +148,32 @@ h3 {
 }
 
 .hud-prefix {
-  text-align: center;
-  font-size: 2rem;
-  margin: 3%;
+  /* text-align: center; */
+  font-size: 3rem;
+  /* margin: 3%; */
 }
 
 .hud-main-text {
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
+  text-align: center;
 }
 
 #progressBar {
-  width: 20rem;
-  height: 4rem;
+  width: 35rem;
+  height: 2rem;
   margin-top: 1.5rem;
   border: 1px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 26px;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  border-radius: 2.6rem;
 }
 
 #progressBarFull {
-  visibility: hidden;
-  height: 3.8rem;
-  width: 0%;
+  height: 1.8rem;
   background: #b0b7b6;
-  border: 1px solid #000000;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 26px;
+  border-radius: 2.6rem;
+  transition: all 0.5s;
 }
 
 form {
