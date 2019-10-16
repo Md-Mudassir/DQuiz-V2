@@ -2,12 +2,15 @@
   "name": "restapi",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "10.16.3"
+  },
   "main": "index.js",
   "scripts": {
-    "nod": "nodemon --ignore 'logs/*' app.js",
-    "start": "node app.js",
+    "nod": "nodemon --ignore 'logs/*' index.js",
+    "start": "PORT=3112 node index.js",
     "show": "forever list",
-    "stop": "forever stop app.js"
+    "stop": "forever stop index.js"
   },
   "keywords": [],
   "author": "Mohammed",
