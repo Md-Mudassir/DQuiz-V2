@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = 3112;
+
 const cors = require("cors");
 const mongoose = require("mongoose");
 require("dotenv/config");
@@ -9,6 +9,8 @@ require("dotenv/config");
 app.use(cors());
 const bodyParser = require("body-parser");
 app.use(bodyParser.json());
+
+const PORT = process.env.PORT || 3112;
 
 app.listen(PORT, () => console.log(`server started at  ${PORT}`));
 

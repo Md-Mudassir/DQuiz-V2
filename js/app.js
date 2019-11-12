@@ -12,12 +12,11 @@ let Questions = " ";
 
 // intitialize and start the game
 initialize = () => {
-  fetch("http://localhost:3112/posts")
+  fetch("https://dquizv3.herokuapp.com/questions")
     .then(res => {
       return res.json();
     })
     .then(loadedQuestions => {
-      console.log(loadedQuestions);
       questions = loadedQuestions.map(loadedQuestion => {
         const formattedQuestion = {
           question: loadedQuestion.question
